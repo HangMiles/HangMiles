@@ -3,8 +3,9 @@ require './config'
 require './lib/HangMiles.rb'
 
 get '/' do
-	session["juego"] =HangMiles.new "india"
-	session["mensaje"]=session["juego"].NumCaracter
+	#session["juego"] =HangMiles.new "india"
+	#session["mensaje"]=session["juego"].NumCaracter
+	session["mensaje"]="frase tiene 5 letras _ _ _ _ _"
 	erb :index 
 end
 
