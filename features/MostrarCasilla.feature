@@ -8,4 +8,10 @@ Feature:
 Scenario: quiero me asignen una frase secreta
 	Given inicio juego
 	When frase sea "india"
-	Then mostrar mensaje "frase tiene 5 letras _ _ _ _ _"
+	Then mostrar mensaje "frase tiene 5 letras"
+
+Scenario: Quiero que me muestre las rayas
+	Given inicio juego
+	And frase sea "india"
+	Then mostrar mensaje "_ _ _ _ _"
+

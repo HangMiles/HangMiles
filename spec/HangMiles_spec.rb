@@ -10,4 +10,14 @@ describe HangMiles do
 			
 	end
 	
+	it "debe mostrar '_ _ _ _ _'" do 
+		#arrange		
+		hangmiles=HangMiles.new "india"
+		#act
+		resultado_mensaje = hangmiles.MostrarCasillas 
+		#assert
+		expect(resultado_mensaje).to eq "_ _ _ _ _"
+			
+	end
+	
 end
